@@ -1,9 +1,10 @@
 import express from 'express';
 import dotenv from 'dotenv';
-import sequelize  from './config/db.config';
+import { sequelize } from "./config/db.config";
 import productRouter from './routes/product.route';
 
 dotenv.config();
+
 const app = express();
 app.use(express.json());
 
